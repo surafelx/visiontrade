@@ -37,13 +37,17 @@
                 <div class="spinner"></div>
                 <!-- Loader -->
                 <div class="loader">
-                    <span data-text-preloader="D" class="animated-letters">D</span>
+                    <span data-text-preloader="V" class="animated-letters">V</span>
                     <span data-text-preloader="I" class="animated-letters">I</span>
-                    <span data-text-preloader="G" class="animated-letters">G</span>
+                    <span data-text-preloader="S" class="animated-letters">S</span>
                     <span data-text-preloader="I" class="animated-letters">I</span>
-                    <span data-text-preloader="M" class="animated-letters">M</span>
+                    <span data-text-preloader="O" class="animated-letters">O</span>
+                    <span data-text-preloader="N" class="animated-letters">N</span>
+                    <span data-text-preloader="T" class="animated-letters">T</span>
+                    <span data-text-preloader="R" class="animated-letters">R</span>
                     <span data-text-preloader="A" class="animated-letters">A</span>
-                    <span data-text-preloader="X" class="animated-letters">X</span>
+                    <span data-text-preloader="D" class="animated-letters">D</span>
+                    <span data-text-preloader="E" class="animated-letters">E</span>
                 </div>
                 <p class="fw-5 text-center text-uppercase">Loading</p>
             </div>
@@ -86,7 +90,8 @@
                 <div class="container header">
                     <!-- Navbar Brand-->
                     <a class="navbar-brand" href="/">
-                        <img class="navbar-brand-regular"  height="10px" src="assets/img/logo/logo-white.png" alt="brand-logo">
+                        <img class="navbar-brand-regular" height="10px" src="assets/img/logo/logo-white.png"
+                            alt="brand-logo">
                         <img class="navbar-brand-sticky" height="60px" src="assets/img/logo/logo.png"
                             alt="sticky brand-logo">
                     </a>
@@ -161,17 +166,16 @@
                     <div class="col-12 col-md-6">
                         <div class="welcome-intro">
                             <h1 class="text-white text-center text-md-left">VisionTrade</h1>
-                            <h2 class="text-white display-5 text-center text-md-left my-4">A Digital Formula For <br>
+                            <p class="text-white text-center text-md-left my-4">A Digital Formula For <br>
                                 Manufacturers
-                                To Acquire <br> New Business Globally</h2>
+                                To Acquire <br> New Business Globally</p>
                             <!-- Buttons -->
                             <div
                                 class="button-group d-flex align-items-center justify-content-center justify-content-md-start">
                                 <a data-toggle="modal" data-target="#exampleModalCenter" href="#"
                                     class="btn btn-bordered-white">Start a Project</a>
                                 <!-- Play Button -->
-                                <a class="play-btn" data-fancybox data-width="640" data-height="360"
-                                    data-small-btn="true" href="https://youtu.be/TKnufs85hXk">
+                                <a class="play-btn" data-toggle="modal" data-target="#videoModal" href="#">
                                     <div class="btn-circle play-animation"></div>
                                     <div class="btn-circle play-animation animation-short"></div>
                                     <!-- Play Icon -->
@@ -180,6 +184,8 @@
                                     </div>
                                 </a>
                             </div>
+
+
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -225,7 +231,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -244,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -263,7 +269,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -283,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <!-- Single Service -->
                         <div class="single-service service-gallery overflow-hidden">
                             <!-- Service Thumb -->
@@ -345,8 +351,7 @@
                         <!-- Video Content -->
                         <div class="video-content">
                             <!-- Play Button -->
-                            <a class="play-btn" data-fancybox data-width="640" data-height="360" data-small-btn="true"
-                                href="https://youtu.be/TKnufs85hXk">
+                            <a class="play-btn" data-toggle="modal" data-target="#videoModal" href="#">
                                 <div class="btn-circle play-animation"></div>
                                 <div class="btn-circle play-animation animation-short"></div>
                                 <!-- Play Icon -->
@@ -354,7 +359,7 @@
                                     <i class="fas fa-play"></i>
                                 </div>
                             </a>
-                            <img class="video-thumb" src="assets/img/bg/video_bg.jpg" alt="">
+                            <img class="video-thumb" src="assets/img/video.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -582,27 +587,32 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-12 ">
+                    <div class="col-8" style="padding-top: 80px">
                         <!-- Brand Partner Wrapper -->
-                        <ul class="brand-partner-wrapper list-inline text-center">
+                        <ul style="display: flex; flex-wrap: wrap; gap: 20px"
+                            class="brand-partner-wrapper list-flex text-center">
                             <!-- Single Partner -->
                             <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_1.png" alt="">
+                                <img src="assets/img/brand/client-logo1.jpg" alt="">
                             </li>
                             <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_1.png" alt="">
-                            </li>
-                            <!-- Single Partner -->
-                            <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_2.png" alt="">
+                                <img src="assets/img/brand/client-logo2.jpg" alt="">
                             </li>
                             <!-- Single Partner -->
                             <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_3.png" alt="">
+                                <img src="assets/img/brand/client-logo3.jpg" alt="">
                             </li>
                             <!-- Single Partner -->
                             <li class="single-partner list-inline-item p-lg-3">
-                                <img src="assets/img/brand/brand_partner_4.png" alt="">
+                                <img src="assets/img/brand/client-logo4.jpg" alt="">
+                            </li>
+                            <!-- Single Partner -->
+                            <li class="single-partner list-inline-item p-lg-3">
+                                <img src="assets/img/brand/client-logo5.jpg" alt="">
+                            </li>
+                            <!-- Single Partner -->
+                            <li class="single-partner list-inline-item p-lg-3">
+                                <img src="assets/img/brand/client-logo6.jpg" alt="">
                             </li>
                         </ul>
                     </div>
@@ -630,23 +640,14 @@
                 <div class="row">
                     <!-- Client Reviews -->
                     <div class="client-reviews owl-carousel">
-                        <!-- Single Review -->
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>My name is Dominic Fischer, I am Key Account and Business Development Manager
-                                        for
-                                        Christian Bauer GmbH & Co Kg. We work with VisionTrade for our Google campaigns.
-                                        This helps us to get relevant visitors to our website for important keywords.
-                                        Especially as a niche supplier like we are, this is essential. The cooperation
-                                        with VisionTrade is always fair, competent and professional. Our contact person
-                                        Sascha is always available when we have questions. Personally, I see the biggest
-                                        advantage in the "Business Hub". It helps us to understand exactly which
-                                        companies come to our website and where they found us based on which keywords.
-                                        This helps us to continuously improve our digital presence! Because you can only
-                                        optimize what you measure.</p>
+                                    <p>We have secured new customers as a result of the cooperation with VisionTrade Ltd
+                                        over the past year from the PPC Google campaign.</p>
+                                    <a href="www.thumm-online.de">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -661,21 +662,21 @@
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Junaid Hasan</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Claudia Pedersen</h5>
+                                    <h6 class="text-secondary fw-6">Director, www.thumm-online.de</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p> I can confirm as the Director of www.thumm-online.de that we have secured
-                                        new
-                                        customers as a result of the co-operation with VisionTrade ltd over the past
-                                        year from the PPC Google campaign.</p>
+                                    <p>We have been working with VisionTrade for 5 years and are receiving regular
+                                        interest. Our CTR has improved year by year, and the regular reports are a
+                                        valuable marketing tool.</p>
+                                    <a href="www.proxtech.com">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -686,26 +687,24 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-2.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Yasmin Akter</h5>
-                                    <h6 class="text-secondary fw-6">Founder, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Luc Roovers</h5>
+                                    <h6 class="text-secondary fw-6">MD, www.proxtech.com</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>Here at ProxTech we can confirm that we have been working with VisionTrade for 5
-                                        years and are receiving interest regularly. Our CTR has improved year by year
-                                        which we are pleased about as this is the main objective for Google AdWords. The
-                                        regular reports are also a very interesting marketing tool to point out the
-                                        direction of our development and sales efforts.</p>
+                                    <p>We have extended our campaign to new languages last year and have new business
+                                        inquiries. I recommend VisionTrade for Search Engine Marketing.</p>
+                                    <a href="www.ta-roloff.com">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -716,26 +715,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Annett Olschewski</h5>
+                                    <h6 class="text-secondary fw-6">CEO, www.ta-roloff.com</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>I can confirm that we gave VisionTrade the order to supply us with International
-                                        marketing through Google adwords. We have extended our campaign to new languages
-                                        last year and have new business inquiry, which we sense is from our Google
-                                        campaigns. I would recommend VisionTrade as a supplier for Search Engine
-                                        Marketing.</p>
+                                    <p>We secured a contract with a Government in the Benelux regions through our Google
+                                        Adwords Campaign. We highly recommend Sascha, his team, and VisionTrade's
+                                        services.</p>
+                                    <a href="www.reiner-sct.com">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -746,26 +744,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Andreas Staiger</h5>
+                                    <h6 class="text-secondary fw-6">Owner, www.reiner-sct.com</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>I am writing this review to highlight how pleased I am with VisionTrade. Within
-                                        the length of our partnership we have managed to secure a contract with a
-                                        Government in the Benelux regions, through the use of our Google Adwords
-                                        Campaign. We highly recommend Sascha, his team and Services at VisionTrade and
-                                        we will continue to use their solutions in the future.</p>
+                                    <p>VisionTrade provides us with detailed information on companies visiting our
+                                        website, identifying clicks from PPC (VisionTrade) or organic (in-house), which
+                                        shows where the business comes from.</p>
+                                    <a href="www.insed.de">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -776,25 +773,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Mr. G. Schmid</h5>
+                                    <h6 class="text-secondary fw-6">Director, www.insed.de</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>VisionTrade can confirm that www.insed.de has been getting information from us
-                                        that provides precious details on companies only whom have been visiting the
-                                        website. Insed then can identify if those clicks are from PPC ( VisionTrade ) or
-                                        organic( in house ) which shows where the business comes from.</p>
+                                    <p>We have been working with VisionTrade for over a year, initially focusing on two
+                                        countries. We noticed an increase in website demands and turnover, and have now
+                                        expanded to three more countries.</p>
+                                    <a href="www.bulte.com">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -805,27 +802,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Alexandra Prost</h5>
+                                    <h6 class="text-secondary fw-6">Marketing & Communication, www.bulte.com</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>We have been working with VisionTrade for more than a year now; we focused our
-                                        Google advertising campaign on two countries in the beginning. After about 8
-                                        months, we could in fact notice an increase of the demands on our website and
-                                        thus, an increase of our turnover in those 2 countries. We added 3 more a few
-                                        months ago, and are looking forward to having the same success with those new
-                                        campaigns.</p>
+                                    <p>We have been working with VisionTrade for a number of years and received regular
+                                        inquiries. We have secured orders through these inquiries, thanks to the
+                                        specific nature of our machinery.</p>
+                                    <a href="www.zappe-gmbh.de">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -836,26 +831,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Mr. Zappe</h5>
+                                    <h6 class="text-secondary fw-6">Owner, www.zappe-gmbh.de</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>Mr Zappe of www.zappe-gmbh.de has allowed us to state that we have been working
-                                        with him for a number of years and has received regular inquiry through us.
-                                        Due to the specific nature of his machinery, after dealing with those inquiries
-                                        he has secured orders. Mr Zappe is the owner and has been working with 1 contact
-                                        Sascha through out his campaign with VisionTrade</p>
+                                    <p>Our CTR, which is the measure of relevancy for AdWords, was around 1.5-3% when we
+                                        did the campaign ourselves. After outsourcing to VisionTrade Ltd, we are now
+                                        achieving almost triple at 6.9%.</p>
+                                    <a href="www.kmtwaterjet.com">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -866,24 +860,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Wolfgang Emrich</h5>
+                                    <h6 class="text-secondary fw-6">Marketing Director, www.kmtwaterjet.com</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>We can confirm that our CTR which is the measure of relevancy for adwords was
-                                        around 1.5 - 3 % when we did the campaign ourselves. When we out sourced this to
-                                        VisionTrade ltd we are now achieving almost triple at 6.9 %.</p>
+                                    <p>After two years of successful cooperation, we always find our keywords at the top
+                                        of Google. We get great click-through rates and are very satisfied with the work
+                                        of VisionTrade.</p>
+                                    <a href="www.abutments4life.de">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -894,26 +889,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Dr. Bruno Spindler</h5>
+                                    <h6 class="text-secondary fw-6">CEO, www.abutments4life.de</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>After two years of a successful cooperation, we always find ourselves with our
-                                        keywords at the top of Google. Their communication is direct and
-                                        uncomplicated.We get great click-through rates and are very satisfied with the
-                                        work of VisionTrade.
-                                        We gladly recommend the company further.</p>
+                                    <p>We are a healthcare software solutions provider operating in many countries.
+                                        VisionTrade has been running multi-language AdWords campaigns for us, and we
+                                        confirm receiving qualified traffic to our website.</p>
+                                    <a href="www.comed-com.de">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -924,31 +918,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">T. Knipps</h5>
+                                    <h6 class="text-secondary fw-6">Marketing Director, www.comed-com.de</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>We are a healthcare software solutions provider operating in many
-                                        countries.VisionTrade has been doing multi-language adwords campaign for our
-                                        business and we confirm receiving qualified traffic to our website.
-                                        We are achieving more than 5% CTR for all of our campaigns which is considered
-                                        to be higher than Avg CTR by Google. We are quite pleased with the VisionTrade's
-                                        service and support.
-                                        VisionTrade's web development team is also doing a professional job in
-                                        re-designing our website.
-                                        We really like the look & feel of the website and especially the new matrix of
-                                        sectors and product lines added to our website.</p>
+                                    <p>We work with VisionTrade since 2011 and are convinced we have the right partner.
+                                        We receive requests from many countries, allowing us to introduce our products
+                                        and technical solutions to international customers.</p>
+                                    <a href="www.bay-boiler.de">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -959,27 +947,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Mr. Rudolf Schwarzenberger</h5>
+                                    <h6 class="text-secondary fw-6">BBS GMBH & BAY ENGINEERING, www.bay-boiler.de</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>We work with VisionTrade since 2011 and are convinced that we have the right
-                                        partner on our side. We receive the requests from many countries of the world.
-                                        It gives us the possibility of our products and technical solutions to get
-                                        introduced to international customers.This way it is possible to get us an
-                                        interesting orders.
-                                        BBS GMBH & BAY ENGINEERING</p>
+                                    <p>After the first year of collaboration with VisionTrade, we tried launching our
+                                        own Google AdWords campaigns. The results were better CTR and number of clicks
+                                        when we reverted to VisionTrade.</p>
+                                    <a href="www.fmtag.com">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -990,27 +976,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Mr. Ralph Krauß</h5>
+                                    <h6 class="text-secondary fw-6">FMT Fluid Management Swiss AG, www.fmtag.com</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>After the first year of collaboration with VisionTrade we tried to launch our own
-                                        Google AdWords campaigns. But it was not run properly, so we revert back to
-                                        VisionTrade.
-                                        The result is better CTR and number of clicks. We are very satisfied with the
-                                        result and happy to work with VisionTrade.
-                                        FMT Fluid Management Swiss AG</p>
+                                    <p>We recommend a cooperation with VisionTrade. For 5 predefined keywords for SEO,
+                                        we are at the Google page 1 position, which has significantly boosted our online
+                                        shop sales.</p>
+                                    <a href="www.ichbrauchkartons.de">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -1021,25 +1005,25 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Mr. Henning Spilker</h5>
+                                    <h6 class="text-secondary fw-6">www.ichbrauchkartons.de</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Review -->
+
                         <div class="single-review p-5">
                             <!-- Review Content -->
                             <div class="review-content">
                                 <!-- Review Text -->
                                 <div class="review-text">
-                                    <p>We recommend a Cooperation with VisionTrade. It is a professional service with
-                                        fair conditions. For 5 predefined keywords for SEO we are at the Google page 1
-                                        position, which has bought us noticeable result in our online shop sales.
-                                        Highly recommended!</p>
+                                    <p>After a successful first year, we increased our online marketing budget in the
+                                        second year and continue to receive increased inquiries and sales from our
+                                        Google AdWords campaign.</p>
+                                    <a href="www.danitobler.ch">Read more</a>
                                 </div>
                                 <!-- Quotation Icon -->
                                 <div class="quot-icon">
@@ -1050,15 +1034,45 @@
                             <div class="reviewer media mt-3">
                                 <!-- Reviewer Thumb -->
                                 <div class="reviewer-thumb">
-                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-3.png" alt="">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
                                 </div>
                                 <!-- Reviewer Media -->
                                 <div class="reviewer-meta media-body align-self-center ml-4">
-                                    <h5 class="reviewer-name color-primary mb-2">Md. Arham</h5>
-                                    <h6 class="text-secondary fw-6">CEO, Themeland</h6>
+                                    <h5 class="reviewer-name color-primary mb-2">Mr. Dani Tobler</h5>
+                                    <h6 class="text-secondary fw-6">www.danitobler.ch</h6>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="single-review p-5">
+                            <!-- Review Content -->
+                            <div class="review-content">
+                                <!-- Review Text -->
+                                <div class="review-text">
+                                    <p>VisionTrade has been very effective in running our SEM campaign, targeting
+                                        different countries in their native languages. We continue to receive worldwide
+                                        orders after 5 years of collaboration.</p>
+                                    <a href="www.roweko.de">Read more</a>
+                                </div>
+                                <!-- Quotation Icon -->
+                                <div class="quot-icon">
+                                    <img class="avatar-sm" src="assets/img/quote.png" alt="">
+                                </div>
+                            </div>
+                            <!-- Reviewer -->
+                            <div class="reviewer media mt-3">
+                                <!-- Reviewer Thumb -->
+                                <div class="reviewer-thumb">
+                                    <img class="avatar-lg radius-100" src="assets/img/avatar/avatar-1.png" alt="">
+                                </div>
+                                <!-- Reviewer Media -->
+                                <div class="reviewer-meta media-body align-self-center ml-4">
+                                    <h5 class="reviewer-name color-primary mb-2">Mr. Michael Selle</h5>
+                                    <h6 class="text-secondary fw-6">www.roweko.de</h6>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1378,8 +1392,73 @@
         </div>
     </div>
 
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div style="background-color: transparent;" class="modal-content">
+
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video style="border-radius: 5px;" id="video" class="embed-responsive-item" controls>
+                            <source id="videoSource" src="./assets/vid/30secondexplaine.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ***** All jQuery Plugins ***** -->
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var videoSrc;
+
+            document.querySelectorAll('.play-btn').forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    videoSrc = button.getAttribute('href');
+
+                    var videoModal = document.getElementById('videoModal');
+                    var videoElement = document.getElementById('video');
+                    var videoSource = document.getElementById('videoSource');
+
+                    videoElement.play();
+
+                    videoModal.addEventListener('shown.bs.modal', function () {
+                        videoSource.setAttribute('src', videoSrc);
+                        videoElement.load();
+                        videoElement.play();
+                    }, { once: true });
+
+                    videoModal.addEventListener('hide.bs.modal', function () {
+                        videoElement.pause();
+                        videoSource.pause();
+                        videoElement.currentTime = 0; // Reset the video to the beginning
+                        videoSource.setAttribute('src', '');
+                    }, { once: true });
+
+                    var bootstrapModal = new bootstrap.Modal(videoModal, {
+                        backdrop: 'true' // Enables closing the modal when clicking outside
+                    });
+
+                    // Add event listener to close modal when clicking outside of the modal content
+                    window.addEventListener('click', function (event) {
+                        if (event.target == videoModal) {
+                            videoElement.pause();
+                            videoElement.currentTime = 0; // Reset the video to the beginning
+                            videoSource.setAttribute('src', '');
+                            bootstrapModal.hide();
+                        }
+                    });
+
+                    bootstrapModal.show();
+                });
+            });
+        });
+    </script>
 
     <!-- jQuery(necessary for all JavaScript plugins) -->
     <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>

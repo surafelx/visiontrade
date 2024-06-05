@@ -1133,6 +1133,14 @@ header {
   display: none;
 }
 
+.navbar-brand-regular  {
+  height: 43px;
+}
+
+.navbar-brand-sticky  {
+  height: 43px;
+}
+
 .navbar-sticky .navbar-brand-sticky {
   display: inline;
 }

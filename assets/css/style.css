@@ -3091,7 +3091,7 @@ body.dark,
 }
 
 .carousel-inner > li {
-  flex: 0 0 33.33%; /* Show 3 items at a time */
+  flex: 0 0 20%; /* Show 3 items at a time */
   box-sizing: border-box;
   padding: 10px;
 }
